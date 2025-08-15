@@ -1555,79 +1555,92 @@
             <div class="col-md-12">
               <div id="primary" class="content-area">
                 <main id="main" class="site-main">
-                  <div
-                    class="custom-gallery-header"
-                    style="text-align: center; margin-bottom: 30px"
-                  >
+                  <style>
+                    .custom-gallery-header {
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: center;
+                      gap: 16px;
+                      margin-bottom: 30px;
+                      padding: 0 10px;
+                    }
+
+                    .custom-gallery-header img {
+                      max-width: 100%;
+                      width: 100%;
+                      height: auto;
+                      flex: 1 1 200px; /* Minimum 200px per image, will wrap on smaller screens */
+                    }
+
+                    @media (min-width: 768px) {
+                      .custom-gallery-header img {
+                        flex: 1 1 300px;
+                      }
+                    }
+
+                    @media (min-width: 1024px) {
+                      .custom-gallery-header img {
+                        flex: 1 1 400px;
+                      }
+                    }
+                  </style>
+
+                  <div class="custom-gallery-header">
                     <img
                       src="https://product-110924.s3.ap-southeast-1.amazonaws.com/gallery/BILLY-WESTOR.png"
-                      alt="Custom Name Image"
-                      style="max-width: 500px; height: auto"
+                      alt="BILLY WESTOR"
                     />
                     <img
                       src="https://product-110924.s3.ap-southeast-1.amazonaws.com/gallery/BRAND.png"
-                      alt="Custom Name Image"
-                      style="max-width: 500px; height: auto"
+                      alt="BRAND"
                     />
                     <img
                       src="https://product-110924.s3.ap-southeast-1.amazonaws.com/gallery/COLD-SMOOTH.png"
-                      alt="Custom Name Image"
-                      style="max-width: 500px; height: auto"
+                      alt="COLD SMOOTH"
                     />
                     <img
                       src="https://product-110924.s3.ap-southeast-1.amazonaws.com/gallery/FILM-FEST.png"
-                      alt="Custom Name Image"
-                      style="max-width: 500px; height: auto"
+                      alt="FILM FEST"
                     />
                     <img
                       src="https://product-110924.s3.ap-southeast-1.amazonaws.com/gallery/GOLEN-HOUR.png"
-                      alt="Custom Name Image"
-                      style="max-width: 500px; height: auto"
+                      alt="GOLEN HOUR"
                     />
                     <img
                       src="https://product-110924.s3.ap-southeast-1.amazonaws.com/gallery/HAPPY-BIRTHDAY.png"
-                      alt="Custom Name Image"
-                      style="max-width: 500px; height: auto"
+                      alt="HAPPY BIRTHDAY"
                     />
                     <img
                       src="https://product-110924.s3.ap-southeast-1.amazonaws.com/gallery/NEON-SIGN.png"
-                      alt="Custom Name Image"
-                      style="max-width: 500px; height: auto"
+                      alt="NEON SIGN"
                     />
                     <img
                       src="https://product-110924.s3.ap-southeast-1.amazonaws.com/gallery/ORIGINAL-RED-WINE.png"
-                      alt="Custom Name Image"
-                      style="max-width: 500px; height: auto"
+                      alt="ORIGINAL RED WINE"
                     />
                     <img
                       src="https://product-110924.s3.ap-southeast-1.amazonaws.com/gallery/PARK-MILLER.png"
-                      alt="Custom Name Image"
-                      style="max-width: 500px; height: auto"
+                      alt="PARK MILLER"
                     />
                     <img
                       src="https://product-110924.s3.ap-southeast-1.amazonaws.com/gallery/PINOT-NOIR.png"
-                      alt="Custom Name Image"
-                      style="max-width: 500px; height: auto"
+                      alt="PINOT NOIR"
                     />
                     <img
                       src="https://product-110924.s3.ap-southeast-1.amazonaws.com/gallery/REFRESCO.png"
-                      alt="Custom Name Image"
-                      style="max-width: 500px; height: auto"
+                      alt="REFRESCO"
                     />
                     <img
                       src="https://product-110924.s3.ap-southeast-1.amazonaws.com/gallery/SPIRIT-NIGHT.png"
-                      alt="Custom Name Image"
-                      style="max-width: 500px; height: auto"
+                      alt="SPIRIT NIGHT"
                     />
                     <img
                       src="https://product-110924.s3.ap-southeast-1.amazonaws.com/gallery/STEAK-NIGHT.png"
-                      alt="Custom Name Image"
-                      style="max-width: 500px; height: auto"
+                      alt="STEAK NIGHT"
                     />
                     <img
                       src="https://product-110924.s3.ap-southeast-1.amazonaws.com/gallery/VALENCE.png"
-                      alt="Custom Name Image"
-                      style="max-width: 500px; height: auto"
+                      alt="VALENCE"
                     />
                   </div>
 
