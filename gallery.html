@@ -1406,6 +1406,66 @@
         }
       </style></noscript
     >
+
+    <style>
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-auto-rows: 200px;
+        gap: 10px;
+        padding: 20px;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        cursor: pointer;
+        border-radius: 6px;
+        transition: transform 0.3s ease;
+      }
+
+      .gallery img:hover {
+        transform: scale(1.05);
+      }
+
+      .lightbox {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 999;
+      }
+
+      .lightbox.active {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .lightbox img {
+        max-width: 90vw;
+        max-height: 90vh;
+        border-radius: 8px;
+      }
+
+      .lightbox:after {
+        content: "×";
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body
     class="wp-singular page-template-default page page-id-17 wp-theme-motov4 theme-motov4 woocommerce-no-js motov4_single_default motov4_fixed_header wpb-js-composer js-comp-ver-8.4.1 vc_responsive"
@@ -1444,14 +1504,14 @@
 
                 <li
                   id="menu-item-21"
-                  class="menu-item menu-item-type-post_type menu-item-object-page"
+                  class="menu-item menu-item-type-post_type menu-item-object-page current_page_item"
                 >
                   <a href="gallery.html">Gallery</a>
                 </li>
 
                 <li
                   id="menu-item-19"
-                  class="menu-item menu-item-type-post_type menu-item-object-page current_page_item"
+                  class="menu-item menu-item-type-post_type menu-item-object-page"
                 >
                   <a href="contact.html">Contact Us</a>
                 </li>
@@ -1476,14 +1536,14 @@
         <div class="container">
           <div class="motov4_pagetitle_inner">
             <div class="motov4_pagetitle_heading">
-              <h3>Contact Us</h3>
+              <h3>Gallery</h3>
             </div>
             <div class="motov4_pagetitle_breadcrumb">
               <ul>
                 <li>
                   <a href="index.html">Home</a>
                 </li>
-                <li>Contact Us</li>
+                <li>Gallery</li>
               </ul>
             </div>
           </div>
@@ -1495,105 +1555,36 @@
             <div class="col-md-12">
               <div id="primary" class="content-area">
                 <main id="main" class="site-main">
-                  <article
-                    id="post-17"
-                    class="post-17 page type-page status-publish hentry"
-                  >
-                    <div class="entry-content">
-                      <div class="wpb-content-wrapper">
-                        <div class="vc_row wpb_row vc_row-fluid">
-                          <div
-                            class="wpb_column vc_column_container vc_col-sm-6"
-                          >
-                            <div
-                              class="vc_column-inner motov4_custom_68945f0f36a45"
-                            >
-                              <div class="wpb_wrapper">
-                                <div
-                                  class="motov4_img_design motov4_bg_opacity motov4_img_border motov4_image_68945f0f36a9f"
-                                >
-                                  <img
-                                    decoding="async"
-                                    src="wp-content/uploads/sites/17/2019/06/fire_about3.jpg"
-                                    class="img-fluid"
-                                    alt="Image Missing"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div
-                            class="wpb_column vc_column_container vc_col-sm-6"
-                          >
-                            <div
-                              class="vc_column-inner motov4_custom_68945f0f36a45"
-                            >
-                              <div class="wpb_wrapper">
-                                <div
-                                  class="motov4_img_design motov4_bg_opacity motov4_img_border motov4_image_68945f0f36a9f"
-                                >
-                                  <img
-                                    decoding="async"
-                                    src="wp-content/uploads/sites/17/2019/06/fire_about4.jpg"
-                                    class="img-fluid"
-                                    alt="Image Missing"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="vc_row wpb_row vc_row-fluid">
-                          <div
-                            class="wpb_column vc_column_container vc_col-sm-12"
-                          >
-                            <div
-                              class="vc_column-inner motov4_custom_68945f0f3700f"
-                            >
-                              <div class="wpb_wrapper">
-                                <div class="motov4_spacer_68945f0f3704f"></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          data-vc-full-width="true"
-                          data-vc-full-width-init="false"
-                          data-vc-stretch-content="true"
-                          class="vc_row wpb_row vc_row-fluid vc_row-no-padding"
-                        >
-                          <div
-                            class="wpb_column vc_column_container vc_col-sm-12"
-                          >
-                            <div
-                              class="vc_column-inner motov4_custom_68945f0f37302"
-                            >
-                              <div class="wpb_wrapper">
-                                <div
-                                  id="motov4_map_68945f0f3734a"
-                                  class="motov4_google_map"
-                                  style="height: 500px"
-                                >
-                                  <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127485.59164642107!2d101.5808095316431!3d3.114613685239948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc49804710101f%3A0x3acf785b204ce088!2sMenara%20SuezCap!5e0!3m2!1sen!2smy!4v1753859717318!5m2!1sen!2smy"
-                                    width="100%"
-                                    height="100%"
-                                    style="border: 0"
-                                    allowfullscreen=""
-                                    loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"
-                                  ></iframe>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                  <div class="gallery" id="gallery"></div>
 
-                        <div class="vc_row-full-width vc_clearfix"></div>
-                      </div>
-                    </div>
-                    <!-- .entry-content -->
-                  </article>
+                  <div class="lightbox" id="lightbox">
+                    <img src="" alt="Zoomed" />
+                  </div>
+
+                  <script>
+                    const gallery = document.getElementById("gallery");
+                    const lightbox = document.getElementById("lightbox");
+                    const lightboxImg = lightbox.querySelector("img");
+
+                    // Load images from 001.png to 044.png
+                    for (let i = 1; i <= 44; i++) {
+                      const padded = String(i).padStart(3, "0");
+                      const img = document.createElement("img");
+                      img.src = `https://product-110924.s3.ap-southeast-1.amazonaws.com/gallery/${padded}.png`;
+                      img.alt = `Image ${padded}`;
+                      img.addEventListener("click", () => {
+                        lightbox.classList.add("active");
+                        lightboxImg.src = img.src;
+                      });
+                      gallery.appendChild(img);
+                    }
+
+                    lightbox.addEventListener("click", () => {
+                      lightbox.classList.remove("active");
+                      lightboxImg.src = "";
+                    });
+                  </script>
+
                   <!-- #post-17 -->
                 </main>
                 <!-- #main -->
