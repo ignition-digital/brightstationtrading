@@ -8,8 +8,50 @@
       img:is([sizes="auto" i], [sizes^="auto," i]) {
         contain-intrinsic-size: 3000px 1500px;
       }
+
+      .whatsapp-float {
+        position: fixed;
+        bottom: 100px;
+        left: 40px;
+        background-color: #25d366;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 6px #25d366;
+        z-index: 1000;
+        text-decoration: none;
+        animation: gentlePulse 3s infinite ease-in-out;
+      }
+
+      .whatsapp-float i {
+        font-size: 32px;
+        color: white;
+      }
+
+      @keyframes gentlePulse {
+        0%,
+        100% {
+          transform: scale(1);
+          box-shadow: 0 0 6px #25d366;
+        }
+        60% {
+          transform: scale(1.1);
+          box-shadow: 0 0 10px #25d366;
+        }
+      }
+
+      .whatsapp-float:hover {
+        transform: scale(1.1);
+      }
     </style>
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <link
       rel="stylesheet"
       id="wp-block-library-css"
@@ -2272,6 +2314,17 @@
         </div>
       </div>
     </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a
+      href="https://wa.me/601131433299?text=Hi, i am interested to know more."
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
     <!-- motov4_page_content_wrapper Div End-->
     <div class="sidebar_default">
       <div class="motov4_footer">
