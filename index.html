@@ -14,37 +14,40 @@
         bottom: 100px;
         left: 40px;
         background-color: #25d366;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
+        border-radius: 30px; /* pill shape instead of circle */
+        padding: 10px 20px;
         display: flex;
         align-items: center;
-        justify-content: center;
-        box-shadow: 0 0 6px #25d366;
+        gap: 10px; /* space between icon & text */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         z-index: 1000;
         text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
         animation: gentlePulse 3s infinite ease-in-out;
       }
 
       .whatsapp-float i {
-        font-size: 32px;
+        font-size: 24px;
         color: white;
       }
 
+      /* Subtle pulse */
       @keyframes gentlePulse {
         0%,
         100% {
           transform: scale(1);
           box-shadow: 0 0 6px #25d366;
         }
-        60% {
-          transform: scale(1.1);
+        50% {
+          transform: scale(1.03);
           box-shadow: 0 0 10px #25d366;
         }
       }
 
       .whatsapp-float:hover {
-        transform: scale(1.1);
+        transform: scale(1.07);
       }
     </style>
 
@@ -2323,6 +2326,7 @@
       rel="noopener noreferrer"
     >
       <i class="fab fa-whatsapp"></i>
+      <span style="color: white">Contact us</span>
     </a>
 
     <!-- motov4_page_content_wrapper Div End-->
